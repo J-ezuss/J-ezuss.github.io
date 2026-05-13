@@ -657,9 +657,10 @@ footer {
   }
 
   .project-grid,
-  #name-email {
-    grid-template-columns: 1fr;
-  }
+#name-email,
+.life-grid {
+  grid-template-columns: 1fr;
+}
 
   .skills-icons {
     grid-template-columns: repeat(2, 1fr);
@@ -691,4 +692,135 @@ footer {
   .project-card img {
     height: 190px;
   }
+}
+
+.dark-logo {
+  filter: brightness(0) invert(1);
+}
+
+/* Mouse Glow */
+
+.cursor-glow {
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  width: 360px;
+  height: 360px;
+  border-radius: 50%;
+  background:
+    radial-gradient(
+      circle,
+      rgba(255, 23, 68, 0.2),
+      rgba(139, 92, 246, 0.12),
+      transparent 70%
+    );
+
+  transform: translate(-50%, -50%);
+  pointer-events: none;
+  z-index: -1;
+  filter: blur(10px);
+
+  transition:
+    left 0.12s ease,
+    top 0.12s ease;
+}
+
+/* Project Tech Badges */
+
+.project-tech {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 9px;
+  margin-top: 18px;
+}
+
+.project-tech span {
+  padding: 7px 10px;
+  border-radius: 999px;
+  color: white;
+  font-size: 0.76rem;
+  font-weight: 800;
+
+  background: rgba(255, 255, 255, 0.08);
+
+  border: 1px solid rgba(255, 255, 255, 0.13);
+}
+
+/* Outside Coding */
+
+#outside-coding {
+  width: min(1100px, 92%);
+  margin-inline: auto;
+  scroll-margin-top: 110px;
+  text-align: left;
+}
+
+#outside-coding h2 {
+  color: white;
+  font-size: clamp(2rem, 5vw, 3.2rem);
+  line-height: 1.05;
+  letter-spacing: -3px;
+  margin: 10px 0 22px;
+}
+
+#outside-coding p {
+  color: var(--muted);
+  max-width: 850px;
+}
+
+.life-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 18px;
+  margin-top: 30px;
+}
+
+.life-card {
+  padding: 24px;
+  border-radius: 24px;
+
+  background: rgba(255, 255, 255, 0.055);
+
+  border: 1px solid var(--card-border);
+
+  transition:
+    transform 0.3s ease,
+    border-color 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+.life-card:hover {
+  transform: translateY(-8px);
+
+  border-color: rgba(34, 211, 238, 0.5);
+
+  box-shadow:
+    0 22px 55px rgba(34, 211, 238, 0.12);
+}
+
+.life-card span {
+  display: inline-flex;
+  font-size: 2rem;
+  margin-bottom: 14px;
+}
+
+.life-card h3 {
+  color: white;
+  margin-bottom: 8px;
+}
+
+/* Better Scroll Reveal */
+
+.reveal {
+  opacity: 0;
+  transform: translateY(28px);
+
+  transition:
+    opacity 0.75s ease,
+    transform 0.75s ease;
+}
+
+.reveal.active {
+  opacity: 1;
+  transform: translateY(0);
 }

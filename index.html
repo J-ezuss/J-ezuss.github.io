@@ -10,6 +10,7 @@
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
+    <div class="cursor-glow"></div>
   <header>
     <a href="#home" class="logo" aria-label="Jesus Martinez logo">JM</a>
 
@@ -50,7 +51,7 @@
         <p class="code-line"><span>const</span> developer = {</p>
         <p class="code-line indent">name: <strong>"Jesus Martinez"</strong>,</p>
         <p class="code-line indent">city: <strong>"New York City"</strong>,</p>
-        <p class="code-line indent">focus: <strong>"Frontend Development"</strong>,</p>
+        <p class="code-line indent">focus: <strong>"Full-Stack Development"</strong>,</p>
         <p class="code-line indent">mindset: <strong>"Keep building"</strong></p>
         <p class="code-line">};</p>
       </div>
@@ -60,10 +61,10 @@
       <p class="section-label">About</p>
       <h2>About Me</h2>
       <p>
-        I’m Jesus Martinez, born and raised in New York City. I’m an aspiring developer who enjoys learning new technologies, building creative projects, and improving my skills one project at a time.
+        I'm Jesus Martinez, born and raised in New York City. I'm an aspiring developer who enjoys learning new technologies, building creative projects, and improving my skills one project at a time.
       </p>
       <p>
-        My background in fast-paced work environments taught me how to communicate, adapt, and solve problems quickly. Now I’m bringing that same energy into web development.
+        My background in fast-paced work environments taught me how to communicate, adapt, and solve problems quickly. Now I'm bringing that same energy into full-stack web development.
       </p>
     </section>
 
@@ -102,7 +103,8 @@
         </div>
 
         <div class="skill-item">
-          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg" alt="Express logo">
+         <img class="dark-logo"
+            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original-wordmark.svg" alt="Express logo">
           <span>Express</span>
         </div>
 
@@ -122,7 +124,8 @@
         </div>
 
         <div class="skill-item">
-          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt="GitHub logo">
+         <img class="dark-logo"
+            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original-wordmark.svg" alt="GitHub logo">
           <span>GitHub</span>
         </div>
 
@@ -141,15 +144,62 @@
       </p>
 
       <div class="project-grid">
-        <article class="project-card">
-          <img src="https://miro.medium.com/0*JVek3Y52-UUSyEdD" alt="CLI game project" />
-          <div class="project-content">
-            <p class="project-tag">JavaScript CLI</p>
-            <h3>Rock Paper Scissors</h3>
-            <p>A CLI Rock, Paper, and Scissors game that you can play directly in your terminal.</p>
-            <a href="https://github.com/J-ezuss" target="_blank" rel="noopener" class="project-btn">GitHub</a>
-          </div>
+
+           <article class="project-card">
+            <img
+        src="img/Screenshot 2026-03-30 at 8.25.47 AM.png"   alt="Gallery Grid web application"/>
+
+        <div class="project-content">
+         <p class="project-tag">API Project</p>
+
+         <h3>Gallery Grid</h3>
+
+         <p>
+             A responsive web application that displays artwork from the Art Institute of Chicago with a clean gallery-style layout.
+        </p>
+
+            <div class="project-tech">
+            <span>JavaScript</span>
+            <span>REST API</span>
+            <span>CSS Grid</span>
+            <span>Responsive Design</span>
+            </div>
+
+        <a href="https://gallerygrid.github.io/Gallery-Grid/"
+            target="_blank"
+            rel="noopener"
+            class="project-btn" >
+                  Website
+                 </a>
+             </div>
         </article>
+
+        <article class="project-card">
+            <img src="https://miro.medium.com/0*JVek3Y52-UUSyEdD" alt="CLI game project" />
+
+            <div class="project-content">
+                 <p class="project-tag">JavaScript CLI</p>
+
+         <h3>Rock Paper Scissors</h3>
+
+            <p>
+              A CLI Rock, Paper, and Scissors game that you can play directly in your terminal.
+            </p>
+
+             <div class="project-tech">
+             <span>JavaScript</span>
+             <span>Node.js</span>
+             <span>CLI</span>
+      </div>
+
+                <a href="https://github.com/J-ezuss"
+                target="_blank"
+                rel="noopener"
+                class="project-btn">
+                GitHub
+            </a>
+        </div>
+    </article>
 
         <article class="project-card">
           <img src="img/recipe.png" alt="Recipe card project" />
@@ -171,21 +221,12 @@
           </div>
         </article>
 
-        <article class="project-card">
-          <img src="img/Screenshot 2026-03-30 at 8.25.47 AM.png" alt="Gallery Grid web application" />
-          <div class="project-content">
-            <p class="project-tag">API Project</p>
-            <h3>Gallery Grid</h3>
-            <p>A responsive web application that displays artwork from the Art Institute of Chicago.</p>
-            <a href="https://gallerygrid.github.io/Gallery-Grid/" target="_blank" rel="noopener" class="project-btn">Website</a>
-          </div>
-        </article>
               <article class="project-card coming-soon-card">
           <div class="project-content coming-soon-content">
             <p class="project-tag">Currently Building</p>
             <h3>More Projects Coming Soon</h3>
             <p>
-              I’m actively working on new frontend and full-stack projects focused on responsive design, APIs, and better user experiences.
+              I'm actively working on new frontend and full-stack projects focused on responsive design, APIs, and better user experiences.
             </p>
 
             <div class="loading-bars">
@@ -198,11 +239,40 @@
       </div>
     </section>
 
+    <section id="outside-coding" class="section-card reveal">
+  <p class="section-label">Outside of Coding</p>
+  <h2>More Than Code</h2>
+
+  <p>
+    When I'm not building projects, I'm usually training, cooking, gaming, or working in fast-paced nightlife environments. Those experiences taught me discipline, communication, and how to stay calm under pressure.
+  </p>
+
+  <div class="life-grid">
+    <div class="life-card">
+      <span>🥊</span>
+      <h3>Training</h3>
+      <p>Boxing and fitness help me stay disciplined and consistent.</p>
+    </div>
+
+    <div class="life-card">
+      <span>🍳</span>
+      <h3>Cooking</h3>
+      <p>I enjoy trying recipes and making food that actually hits.</p>
+    </div>
+
+    <div class="life-card">
+      <span>🎮</span>
+      <h3>Gaming</h3>
+      <p>Gaming keeps me creative and locked into problem solving.</p>
+    </div>
+  </div>
+</section>
+
     <section id="contact" class="section-card reveal">
       <p class="section-label">Contact</p>
       <h2>Let's Connect</h2>
       <p id="contact-intro">
-        I’m looking to keep building new projects and grow as a developer. If you have a question, opportunity, or just want to say hello, feel free to reach out.
+        I'm looking to keep building new projects and grow as a developer. If you have a question, opportunity, or just want to say hello, feel free to reach out.
       </p>
 
       <form action="https://formspree.io/f/xwvoyjen" method="POST">
@@ -232,5 +302,51 @@
     <p>Designed and built by Jesus Martinez</p>
     <p>&copy; 2026 All rights reserved</p>
   </footer>
+  <script>
+  const cursorGlow = document.querySelector('.cursor-glow');
+
+  window.addEventListener('mousemove', (event) => {
+    cursorGlow.style.left = `${event.clientX}px`;
+    cursorGlow.style.top = `${event.clientY}px`;
+  });
+
+  const revealElements = document.querySelectorAll('.reveal');
+
+  const revealObserver = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('active');
+      }
+    });
+  }, {
+    threshold: 0.15
+  });
+
+  revealElements.forEach((element) => revealObserver.observe(element));
+
+  const projectCards = document.querySelectorAll('.project-card');
+
+  projectCards.forEach((card) => {
+    card.addEventListener('mousemove', (event) => {
+      const rect = card.getBoundingClientRect();
+
+      const x = event.clientX - rect.left;
+      const y = event.clientY - rect.top;
+
+      const rotateX = ((y / rect.height) - 0.5) * -8;
+      const rotateY = ((x / rect.width) - 0.5) * 8;
+
+      card.style.transform =
+        `perspective(900px)
+        rotateX(${rotateX}deg)
+        rotateY(${rotateY}deg)
+        translateY(-10px)`;
+    });
+
+    card.addEventListener('mouseleave', () => {
+      card.style.transform = '';
+    });
+  });
+</script>
 </body>
 </html>
