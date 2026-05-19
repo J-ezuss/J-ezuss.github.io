@@ -1,16 +1,15 @@
-<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Jesus Martinez | Portfolio</title>
+  <title>Jesus Martinez | Full-Stack Software Engineer</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-    <div class="cursor-glow"></div>
   <header>
     <a href="#home" class="logo" aria-label="Jesus Martinez logo">JM</a>
 
@@ -26,271 +25,295 @@
   </header>
 
   <main>
-    <section id="home" class="hero-section">
-      <div class="hero-text reveal">
-        <p class="greeting">Hello, my name is</p>
-        <h1>Jesus Martinez</h1>
-        <p class="subtitle">Aspiring Software Engineer | Frontend Developer</p>
-        <h3>I build <span class="highlight">clean, aesthetic websites</span>.</h3>
+    <section id="home" class="hero-section reveal">
+      <div class="hero-copy">
+        <p class="eyebrow">Full-Stack Software Engineer</p>
+        <h1>Hello, I'm<br>
+            Jesus Martinez.</h1>
         <p class="hero-description">
-          I'm focused on creating responsive, user-friendly websites with HTML, CSS, and JavaScript. I like turning simple ideas into polished web experiences.
-        </p>
+            <p class="hero-description">
+                I'm a full-stack software engineering student focused on creating polished digital experiences through clean code, thoughtful design, and continuous growth.
+            </p>
+         </p>
 
-        <div class="home-buttons">
-          <a href="#projects" class="btn-primary">View My Projects</a>
-          <a href="#contact" class="btn-secondary">Get in Touch</a>
+        <div class="hero-actions">
+          <a href="#projects" class="btn-primary">View Projects</a>
+          <a href="#contact" class="btn-secondary">Contact Me</a>
         </div>
       </div>
 
-      <div class="hero-card reveal">
-        <div class="window-dots">
-          <span></span>
-          <span></span>
-          <span></span>
-        </div>
-        <p class="code-line"><span>const</span> developer = {</p>
-        <p class="code-line indent">name: <strong>"Jesus Martinez"</strong>,</p>
-        <p class="code-line indent">city: <strong>"New York City"</strong>,</p>
-        <p class="code-line indent">focus: <strong>"Full-Stack Development"</strong>,</p>
-        <p class="code-line indent">mindset: <strong>"Keep building"</strong></p>
-        <p class="code-line">};</p>
-      </div>
+      <aside class="glove-card" aria-label="Interactive 3D boxing glove skill card">
+  <div class="glove-stage" id="gloveStage">
+    <model-viewer
+      id="boxingGloves"
+      class="glove-model"
+      src="models/boxing-glove/scene.gltf"
+      alt="3D boxing gloves"
+      auto-rotate
+      interaction-prompt="none"
+      shadow-intensity="1.2"
+      exposure="1"
+     camera-orbit="30deg 75deg 1.8m"
+      field-of-view="28deg"
+    ></model-viewer>
+
+    <div class="tool-burst" id="toolBurst" aria-hidden="true"></div>
+  </div>
+
+  <div class="glove-copy">
+    <p class="status-label">Interactive stack</p>
+    <p>Click the glove to reveal the technical skills I use. </p>
+  </div>
+</aside>
     </section>
 
-    <section id="aboutme" class="section-card reveal">
-      <p class="section-label">About</p>
-      <h2>About Me</h2>
-      <p>
-        I'm Jesus Martinez, born and raised in New York City. I'm an aspiring developer who enjoys learning new technologies, building creative projects, and improving my skills one project at a time.
-      </p>
-      <p>
-        My background in fast-paced work environments taught me how to communicate, adapt, and solve problems quickly. Now I'm bringing that same energy into full-stack web development.
-      </p>
+    <section id="aboutme" class="split-section reveal">
+      <div>
+        <p class="eyebrow">About</p>
+        <h2>Developer with real-world problem solving experience.</h2>
+      </div>
+
+      <div class="section-copy">
+        <p>
+          I'm an aspiring full-stack software engineer from New York City. I enjoy building projects that combine clean design, readable code, and useful functionality.
+        </p>
+        <p>
+          My background in fast-paced hospitality environments taught me how to communicate clearly, adapt quickly, and stay composed under pressure. I also love boxing, and that discipline shows up in how I approach software engineering: stay consistent, learn fast, build with purpose, and keep improving.
+        </p>
+      </div>
     </section>
 
     <section id="skills" class="reveal">
-      <p class="section-label">Skills</p>
-      <h2>Technical Skills</h2>
+      <div class="section-header">
+        <p class="eyebrow">Skills</p>
+        <h2>Technologies I work with</h2>
+        <p>
+          A focused stack for building full-stack web applications, from responsive interfaces to server-side routes and databases.
+        </p>
+      </div>
+
       <div class="skills-icons">
         <div class="skill-item">
-          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML logo">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML logo" />
           <span>HTML</span>
         </div>
 
         <div class="skill-item">
-          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS logo">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS logo" />
           <span>CSS</span>
         </div>
 
         <div class="skill-item">
-          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript logo">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript logo" />
           <span>JavaScript</span>
         </div>
 
         <div class="skill-item">
-          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" alt="React logo">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" alt="React logo" />
           <span>React</span>
         </div>
 
         <div class="skill-item">
-          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vitejs/vitejs-original.svg" alt="Vite logo">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vitejs/vitejs-original.svg" alt="Vite logo" />
           <span>Vite</span>
         </div>
 
         <div class="skill-item">
-          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" alt="Node.js logo">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" alt="Node.js logo" />
           <span>Node.js</span>
         </div>
 
         <div class="skill-item">
-         <img class="dark-logo"
-            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original-wordmark.svg" alt="Express logo">
+          <img class="dark-logo" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original-wordmark.svg" alt="Express logo" />
           <span>Express</span>
         </div>
 
-        <div class="skill-item">
-          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/fastapi/fastapi-original.svg" alt="REST API logo">
+        <div class="skill-item text-skill">
+          <strong>REST</strong>
           <span>REST APIs</span>
         </div>
 
         <div class="skill-item">
-          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg" alt="PostgreSQL logo">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg" alt="PostgreSQL logo" />
           <span>PostgreSQL</span>
         </div>
 
         <div class="skill-item">
-          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" alt="SQL logo">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" alt="SQL logo" />
           <span>SQL</span>
         </div>
 
         <div class="skill-item">
-         <img class="dark-logo"
-            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original-wordmark.svg" alt="GitHub logo">
+          <img class="dark-logo" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original-wordmark.svg" alt="GitHub logo" />
           <span>GitHub</span>
         </div>
 
         <div class="skill-item">
-          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" alt="Git logo">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" alt="Git logo" />
           <span>Git</span>
         </div>
       </div>
     </section>
 
     <section id="projects" class="reveal">
-      <p class="section-label">Work</p>
-      <h2>Featured Projects</h2>
-      <p class="projects-intro">
-        A few projects that show my growth with layouts, responsive design, JavaScript, and building real web pages.
-      </p>
-
-      <div class="project-grid">
-
-           <article class="project-card">
-            <img
-        src="img/Screenshot 2026-03-30 at 8.25.47 AM.png"   alt="Gallery Grid web application"/>
-
-        <div class="project-content">
-         <p class="project-tag">API Project</p>
-
-         <h3>Gallery Grid</h3>
-
-         <p>
-             A responsive web application that displays artwork from the Art Institute of Chicago with a clean gallery-style layout.
+      <div class="section-header projects-heading">
+        <p class="eyebrow">Projects</p>
+        <h2>Selected work</h2>
+        <p>
+          Projects showing my growth across layout, interaction, API usage, and full-stack fundamentals.
         </p>
-
-            <div class="project-tech">
-            <span>JavaScript</span>
-            <span>REST API</span>
-            <span>CSS Grid</span>
-            <span>Responsive Design</span>
-            </div>
-
-        <a href="https://gallerygrid.github.io/Gallery-Grid/"
-            target="_blank"
-            rel="noopener"
-            class="project-btn" >
-                  Website
-                 </a>
-             </div>
-        </article>
-
-        <article class="project-card">
-            <img src="https://miro.medium.com/0*JVek3Y52-UUSyEdD" alt="CLI game project" />
-
-            <div class="project-content">
-                 <p class="project-tag">JavaScript CLI</p>
-
-         <h3>Rock Paper Scissors</h3>
-
-            <p>
-              A CLI Rock, Paper, and Scissors game that you can play directly in your terminal.
-            </p>
-
-             <div class="project-tech">
-             <span>JavaScript</span>
-             <span>Node.js</span>
-             <span>CLI</span>
       </div>
 
-                <a href="https://github.com/J-ezuss"
-                target="_blank"
-                rel="noopener"
-                class="project-btn">
-                GitHub
-            </a>
-        </div>
-    </article>
+      <div class="project-grid">
+         <article class="project-card">
+          <img src="img/GalleryGrid.png" alt="Gallery Grid web application" />
+          <div class="project-content">
+            <p class="project-tag">API Project</p>
+            <h3>Gallery Grid</h3>
+            <p>A responsive web app that displays artwork from the Art Institute of Chicago using API data.</p>
+
+            <div class="project-tech">
+              <span>JavaScript</span>
+              <span>REST API</span>
+              <span>CSS Grid</span>
+              <span>Responsive Design</span>
+            </div>
+
+            <div class="project-links">
+              <a href="https://gallerygrid.github.io/Gallery-Grid/" target="_blank" rel="noopener">Live Site</a>
+              <a href="https://github.com/J-ezuss" target="_blank" rel="noopener">GitHub</a>
+            </div>
+          </div>
+        </article>
 
         <article class="project-card">
           <img src="img/recipe.png" alt="Recipe card project" />
           <div class="project-content">
             <p class="project-tag">HTML / CSS</p>
             <h3>Recipe Card</h3>
-            <p>A homemade recipe card dedicated to authentic Mexican pozole with a clean and simple layout.</p>
-            <a href="https://github.com/J-ezuss" target="_blank" rel="noopener" class="project-btn">GitHub</a>
+            <p>A clean recipe page focused on visual hierarchy, spacing, responsive design, and user-friendly layout.</p>
+
+            <div class="project-tech">
+              <span>HTML</span>
+              <span>CSS</span>
+              <span>Responsive Design</span>
+            </div>
+
+            <div class="project-links">
+              <a href="https://github.com/J-ezuss" target="_blank" rel="noopener">GitHub</a>
+            </div>
           </div>
         </article>
 
         <article class="project-card">
-          <img src="img/Screenshot 2026-01-28 at 12.14.52 PM.png" alt="Sneaker website project" />
+          <img src="img/sneakers.png" alt="Sneaker website project" />
           <div class="project-content">
             <p class="project-tag">Web Design</p>
             <h3>Sneaker Website</h3>
-            <p>A sneaker website built to practice product layouts, visual design, and responsive sections.</p>
-            <a href="https://github.com/J-ezuss" target="_blank" rel="noopener" class="project-btn">GitHub</a>
+            <p>A product-focused website created to practice layout structure, styling consistency, and responsive sections.</p>
+
+            <div class="project-tech">
+              <span>HTML</span>
+              <span>CSS</span>
+              <span>Web Design</span>
+            </div>
+
+            <div class="project-links">
+              <a href="https://github.com/J-ezuss" target="_blank" rel="noopener">GitHub</a>
+            </div>
           </div>
         </article>
 
-              <article class="project-card coming-soon-card">
+        <article class="project-card">
+          <img src="https://miro.medium.com/0*JVek3Y52-UUSyEdD" alt="CLI game project" />
+          <div class="project-content">
+            <p class="project-tag">JavaScript CLI</p>
+            <h3>Rock Paper Scissors CLI</h3>
+            <p>A terminal-based JavaScript game that handles user input, computer choices, and game logic.</p>
+
+            <div class="project-tech">
+              <span>JavaScript</span>
+              <span>Node.js</span>
+              <span>CLI</span>
+            </div>
+
+            <div class="project-links">
+              <a href="https://github.com/J-ezuss" target="_blank" rel="noopener">GitHub</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="project-card coming-soon-card">
           <div class="project-content coming-soon-content">
             <p class="project-tag">Currently Building</p>
-            <h3>More Projects Coming Soon</h3>
-            <p>
-              I'm actively working on new frontend and full-stack projects focused on responsive design, APIs, and better user experiences.
-            </p>
+            <h3>More full-stack projects coming soon</h3>
+            <p>I'm building with React, Node.js, Express, REST APIs, and PostgreSQL to strengthen both frontend and backend skills.</p>
 
-            <div class="loading-bars">
-              <span></span>
-              <span></span>
-              <span></span>
+            <div class="project-tech">
+              <span>React</span>
+              <span>Node.js</span>
+              <span>Express</span>
+              <span>PostgreSQL</span>
             </div>
           </div>
         </article>
       </div>
     </section>
 
-    <section id="outside-coding" class="section-card reveal">
-  <p class="section-label">Outside of Coding</p>
-  <h2>More Than Code</h2>
+    <section id="approach" class="split-section reveal">
+      <div>
+        <p class="eyebrow">Approach</p>
+        <h2>How I work</h2>
+      </div>
 
-  <p>
-    When I'm not building projects, I'm usually training, cooking, gaming, or working in fast-paced nightlife environments. Those experiences taught me discipline, communication, and how to stay calm under pressure.
-  </p>
+      <div class="values-grid">
+        <div class="value-card">
+          <h3>Clear communication</h3>
+          <p>I value being direct, asking good questions, and keeping people updated while solving problems.</p>
+        </div>
 
-  <div class="life-grid">
-    <div class="life-card">
-      <span>🥊</span>
-      <h3>Training</h3>
-      <p>Boxing and fitness help me stay disciplined and consistent.</p>
-    </div>
+        <div class="value-card">
+          <h3>Consistent improvement</h3>
+          <p>I focus on building, reviewing, and improving instead of waiting for everything to be perfect.</p>
+        </div>
 
-    <div class="life-card">
-      <span>🍳</span>
-      <h3>Cooking</h3>
-      <p>I enjoy trying recipes and making food that actually hits.</p>
-    </div>
+        <div class="value-card">
+          <h3>User-focused thinking</h3>
+          <p>I care about making websites that are easy to navigate, responsive, and useful for real people.</p>
+        </div>
+      </div>
+    </section>
 
-    <div class="life-card">
-      <span>🎮</span>
-      <h3>Gaming</h3>
-      <p>Gaming keeps me creative and locked into problem solving.</p>
-    </div>
-  </div>
-</section>
-
-    <section id="contact" class="section-card reveal">
-      <p class="section-label">Contact</p>
-      <h2>Let's Connect</h2>
-      <p id="contact-intro">
-        I'm looking to keep building new projects and grow as a developer. If you have a question, opportunity, or just want to say hello, feel free to reach out.
+    <section id="contact" class="contact-section reveal">
+      <p class="eyebrow">Contact</p>
+      <h2>Let's build something useful.</h2>
+      <p>
+        I'm open to junior software engineering opportunities, collaborations, and projects where I can keep learning while contributing meaningful work.
       </p>
+
+      <div class="contact-actions">
+        <a href="mailto:jesand13@gmail.com" class="btn-primary">Email Me</a>
+        <a href="https://github.com/J-ezuss" target="_blank" rel="noopener" class="btn-secondary">GitHub</a>
+        <a href="https://www.linkedin.com/in/jesus-m0521/" target="_blank" rel="noopener" class="btn-secondary">Linkedin</a>
+        <a href="" target="_blank" rel="noopener" class="btn-secondary"></a>
+      </div>
 
       <form action="https://formspree.io/f/xwvoyjen" method="POST">
         <div id="name-email">
           <div id="form-name">
             <label for="name">Name</label>
-            <input type="text" placeholder="Your name here" id="name" name="name" required />
+            <input type="text" placeholder="Your name" id="name" name="name" required />
           </div>
 
           <div id="form-email">
             <label for="email">Email</label>
-            <input type="email" placeholder="Your email here" id="email" name="email" required />
+            <input type="email" placeholder="Your email" id="email" name="email" required />
           </div>
         </div>
 
         <div id="form-message">
-          <label for="message">Leave a Message</label>
-          <textarea id="message" name="message" rows="4" placeholder="Your message here" required></textarea>
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="4" placeholder="Tell me what you’re working on" required></textarea>
         </div>
 
         <button type="submit">Submit</button>
@@ -302,50 +325,68 @@
     <p>Designed and built by Jesus Martinez</p>
     <p>&copy; 2026 All rights reserved</p>
   </footer>
+
   <script>
-  const cursorGlow = document.querySelector('.cursor-glow');
-
-  window.addEventListener('mousemove', (event) => {
-    cursorGlow.style.left = `${event.clientX}px`;
-    cursorGlow.style.top = `${event.clientY}px`;
-  });
-
   const revealElements = document.querySelectorAll('.reveal');
 
   const revealObserver = new IntersectionObserver((entries) => {
     entries.forEach((entry) => {
-      if (entry.isIntersecting) {
-        entry.target.classList.add('active');
-      }
+      if (entry.isIntersecting) entry.target.classList.add('active');
     });
-  }, {
-    threshold: 0.15
-  });
+  }, { threshold: 0.14 });
 
   revealElements.forEach((element) => revealObserver.observe(element));
 
-  const projectCards = document.querySelectorAll('.project-card');
+  const boxingGloves = document.querySelector('#boxingGloves');
+  const toolBurst = document.querySelector('#toolBurst');
 
-  projectCards.forEach((card) => {
-    card.addEventListener('mousemove', (event) => {
-      const rect = card.getBoundingClientRect();
+  const tools = [
+  "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg",
+  "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg",
+  "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg",
+  "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg",
+  "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg",
+  "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg",
+  "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg",
+  "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg",
+  "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg"
+];
 
-      const x = event.clientX - rect.left;
-      const y = event.clientY - rect.top;
+  const positions = [
+    { x: '-95px', y: '-100px' },
+    { x: '70px', y: '-130px' },
+    { x: '145px', y: '-35px' },
+    { x: '-95px', y: '35px' },
+    { x: '-60px', y: '120px' },
+    { x: '110px', y: '95px' }
+  ];
 
-      const rotateX = ((y / rect.height) - 0.5) * -8;
-      const rotateY = ((x / rect.width) - 0.5) * 8;
+  let toolIndex = 0;
 
-      card.style.transform =
-        `perspective(900px)
-        rotateX(${rotateX}deg)
-        rotateY(${rotateY}deg)
-        translateY(-10px)`;
-    });
+  boxingGloves.addEventListener('click', () => {
+    boxingGloves.removeAttribute('auto-rotate');
+    boxingGloves.classList.add('glove-hit');
 
-    card.addEventListener('mouseleave', () => {
-      card.style.transform = '';
-    });
+    for (let i = 0; i < 4; i++) {
+      const pill = document.createElement('span');
+      pill.classList.add('tool-pill');
+      pill.innerHTML = `<img src="${tools[toolIndex]}" alt="tech logo">`;
+
+      const position = positions[Math.floor(Math.random() * positions.length)];
+      pill.style.setProperty('--x', position.x);
+      pill.style.setProperty('--y', position.y);
+
+      toolBurst.appendChild(pill);
+
+      setTimeout(() => pill.remove(), 1500);
+
+      toolIndex = (toolIndex + 1) % tools.length;
+    }
+
+    setTimeout(() => {
+      boxingGloves.classList.remove('glove-hit');
+      boxingGloves.setAttribute('auto-rotate', '');
+    }, 1600);
   });
 </script>
 </body>
