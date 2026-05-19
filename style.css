@@ -777,3 +777,27 @@ footer {
     height: 210px;
   }
 }
+
+@media (max-width: 768px) {
+
+  .glove-stage {
+    min-height: 300px;
+    padding: 16px;
+  }
+
+  .glove-model {
+    width: 250px;
+    height: 250px;
+  }
+
+  .tool-pill {
+    width: 42px;
+    height: 42px;
+  }
+
+  .tool-pill img {
+    width: 20px;
+    height: 20px;
+  }
+
+}
